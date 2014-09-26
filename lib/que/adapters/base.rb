@@ -106,7 +106,7 @@ module Que
       # Integer, bigint, smallint:
       CAST_PROCS[23] = CAST_PROCS[20] = CAST_PROCS[21] = proc(&:to_i)
 
-      # Timestamp with time zone.
+      # Timestamp without time zone.
       CAST_PROCS[1184] = Time.method(:parse)
 
       # JSON.
